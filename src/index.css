@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+:root {
+  font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #eef3ff;
+  background: #070b18;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --ink: #070b18;
+  --ink-soft: #0d1428;
+  --ink-raised: #131c36;
+  --paper: #f3f5ff;
+  --paper-soft: #e7ebf8;
+  --cream: #fbfcff;
+  --accent: #6f7dff;
+  --accent-bright: #65e7f7;
+  --accent-deep: #5a55d8;
+  --text: #eef3ff;
+  --text-muted: #9fa9c5;
+  --text-ink: #14172a;
+  --text-ink-muted: #5c647e;
+  --line: rgba(101, 231, 247, 0.22);
+  --line-dark: rgba(39, 49, 86, 0.15);
+  --serif: 'Playfair Display', Georgia, serif;
+  --mono: 'DM Mono', 'SFMono-Regular', Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--ink);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--ink);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+svg {
+  display: block;
+}
+
+::selection {
+  color: #090d20;
+  background: var(--accent-bright);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-bright);
+  outline-offset: 3px;
+}
